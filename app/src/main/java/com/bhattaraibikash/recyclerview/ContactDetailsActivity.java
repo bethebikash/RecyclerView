@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class ContactDetailsActivity extends AppCompatActivity {
 
     ImageView imgProfile;
@@ -16,8 +18,8 @@ public class ContactDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_details);
 
-        imgProfile = (ImageView) findViewById(R.id.imgProfile);
-        txtname = (TextView) findViewById(R.id.txtname);
+        imgProfile = findViewById(R.id.imgProfile);
+        txtname =  findViewById(R.id.txtname);
         txtphone = (TextView) findViewById(R.id.txtphone);
 
         Bundle bundle = getIntent().getExtras();

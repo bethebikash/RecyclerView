@@ -5,13 +5,14 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.ContactViewHolder> {
 
@@ -57,14 +58,14 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.Contac
     }
 
     public class ContactViewHolder extends RecyclerView.ViewHolder {
-        ImageView imgProfile;
+        CircleImageView imgProfile;
         TextView txtname, txtmovie;
 
         public ContactViewHolder(@NonNull View itemView) {
             super(itemView);
-            imgProfile = itemView.findViewById(R.id.imgProfile);
-            txtname = itemView.findViewById(R.id.txtname);
-            txtmovie = itemView.findViewById(R.id.txtphone);
+            imgProfile = itemView.findViewById(R.id.imgProfile11);
+            txtname = itemView.findViewById(R.id.txtname11);
+            txtmovie = itemView.findViewById(R.id.txtphone11);
         }
     }
 }
